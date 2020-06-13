@@ -1,0 +1,7 @@
+
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<h1>Welcome, Admin</h1>
+It's <%= Time.now %> 
+We have <%= pluralize(@total_orders, "order") %>. Click on <a href="/orders">Orders</a> to view Orders.
